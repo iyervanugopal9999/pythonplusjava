@@ -20,7 +20,9 @@ fi
 rm -rf target
 ./gradlew build
 ret=$?
-if [ $ret -ne 0 ]; then
+if [ $ret -ne 0 ]; then/services.gradle.org/distributions/gradle-7.0-bin.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
 exit $ret
 fi
 rm -rf buildret
