@@ -25,7 +25,7 @@ exit $ret
 fi
 rm -rf buildret
 fi
-rm -rf target
+rm -
 ./gradlew build
 ret=$?
 if [ $ret -ne 0 ]; then
@@ -56,5 +56,11 @@ ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi  
-rm -rf target
+rm -rf tar
+exit $ret 
+fi
+rm -rf targetret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
+fi  get
 exit
